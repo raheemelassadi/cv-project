@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    padding: .7rem;
+    height: 5rem;
+
+    img{
+        width: 10px;
+        margin: 0 .2rem;
+    }
+}
+
+h1 {
+    font-family: 'Silkscreen', cursive;
+    font-size: 2.4rem;
+}
+
+.render-text {
+    border-bottom: 3px solid black;
+    cursor: pointer;
+}
+
+span.horizontal-shake {
+    animation: horizontal-shaking 5s infinite;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+  }
+
+  @keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(10px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(10px) }
+    100% { transform: translateX(0) }
+  }
