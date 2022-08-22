@@ -15,16 +15,48 @@
 
     input {
         display: flex;
-        width: 50vw;
+
         height: 20px;
         padding: 7px;
         margin: 15px 5px;
         font-family: 'Poppins', sans-serif;
         caret-color: antiquewhite;
     }
+
+    span.plus-sign {
+        align-self: center;
+        width: 25px;
+        cursor: pointer;
+        display: flex;
+
+        img{
+            width: 25px;
+        }
+
+    }
 }
 
 form {
     background-color: white;
     margin: 0 auto;
+}
+
+li {
+    display: flex;
+
+    button {
+        height: 30px;
+        align-self: center;
+        padding: 7px;
+        text-align: center;
+        vertical-align: center;
+        cursor: pointer;
+    }
+}
+
+
+.skills-form {
+    input {
+        width: 46vw;
+    }
 }
