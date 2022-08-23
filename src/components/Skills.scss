@@ -10,12 +10,10 @@
     h1 {
         align-self: center;
         width: 50vw;
-        margin-right: 20px;
     }
 
     input {
         display: flex;
-
         height: 20px;
         padding: 7px;
         margin: 15px 5px;
@@ -23,17 +21,17 @@
         caret-color: antiquewhite;
     }
 
-    span.plus-sign {
-        align-self: center;
-        width: 25px;
-        cursor: pointer;
-        display: flex;
+    // span.plus-sign {
+    //     align-self: center;
+    //     width: 25px;
+    //     cursor: pointer;
+    //     display: flex;
 
-        img{
-            width: 25px;
-        }
+    //     img{
+    //         width: 25px;
+    //     }
 
-    }
+    // }
 }
 
 form {
@@ -58,5 +56,19 @@ li {
 .skills-form {
     input {
         width: 46vw;
+    }
+}
+
+.skills-header{
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 30px;
+        height: 30px;
+        align-self: center;
+        vertical-align: middle;
+        margin-left: 10px;
+        cursor: pointer;
     }
 }

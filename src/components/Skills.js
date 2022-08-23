@@ -9,8 +9,10 @@ class Skills extends Component{
     render(){
         return(
             <div className="form-container">
-                <h1>Skills</h1>
-                {/* <span className="plus-sign"><img src="../images/add.png" alt="plus sign"/></span> */}
+                <div className="skills-header">
+                <h1>Skills<img src="../images/add.png" alt="plus sign"/></h1>
+                
+                </div>
                 <form className="skills-form">
                 <ul>
                     <li><input type='text' placeholder="Add Skill"/><button type='submit'>Add</button></li>
