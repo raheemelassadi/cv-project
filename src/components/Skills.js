@@ -11,7 +11,6 @@ class Skills extends Component{
             <div className="form-container">
                 <div className="skills-header">
                 <h1>Skills<img src="../images/add.png" alt="plus sign"/></h1>
-                
                 </div>
                 <form className="skills-form">
                 <ul>

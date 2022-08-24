@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Form.scss"
 import GeneralInfo from "./GeneralInfo";
 import Skills from "./Skills";
+import Experience from "./Experience";
 
 class Form extends Component{
     constructor(){
@@ -12,6 +13,7 @@ class Form extends Component{
         return(
             <>
                 <GeneralInfo />
+                <Experience />
                 <Skills />
             </>
         )

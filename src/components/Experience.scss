@@ -8,7 +8,7 @@
     flex-direction: column;
 
     h1 {
-        align-self: center;
+
         width: 50vw;
     }
 
@@ -27,27 +27,15 @@ form {
     margin: 0 auto;
 }
 
-li {
-    display: flex;
-
-    button {
-        height: 30px;
-        align-self: center;
-        padding: 7px;
-        text-align: center;
-        vertical-align: center;
-        cursor: pointer;
-    }
-}
 
 
-.skills-form {
+.experience-form {
     input {
-        width: 46vw;
+        width: 50vw;
     }
 }
 
-.skills-header{
+.experience-header{
     display: flex;
     justify-content: center;
 
