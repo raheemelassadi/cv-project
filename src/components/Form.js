@@ -4,6 +4,7 @@ import GeneralInfo from "./GeneralInfo";
 import Skills from "./Skills";
 import Experience from "./Experience";
 import Education from "./Education";
+import Render from "./Render";
 
 class Form extends Component{
     constructor(){
@@ -17,6 +18,7 @@ class Form extends Component{
                 <Experience />
                 <Education />
                 <Skills />
+                <Render />
             </>
         )
     }
