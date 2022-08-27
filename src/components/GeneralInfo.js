@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import InputMaker from "./InputMaker";
+import "./GeneralStyles.scss"
 
 class GeneralInfo extends Component{
     constructor(){
@@ -9,16 +11,14 @@ class GeneralInfo extends Component{
         return(
             <div className="form-container">
                 <h1>Personal Info</h1>
-                <form>
                     <div>
-                        <input id="first" type='text' placeholder="First Name"/>
-                        <input id="last" type='text' placeholder="Last Name"/>
+                        <InputMaker placeholder={'First Name'}/>
+                        <InputMaker placeholder={'Last Name'}/>
                         <div className="contact-info">
-                            <input id="email" type='email' placeholder="Email"/>
-                            <input id="phone" type='tel' placeholder="Phone Number"/>
+                            <InputMaker placeholder={'Email'} type={'email'}/>
+                            <InputMaker placeholder={'Phone Number'} type={'tel'}/>
                         </div>
                     </div>
-                </form>
             </div>
         )
     }

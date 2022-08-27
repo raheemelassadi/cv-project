@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './Skills.scss'
+import InputMaker from './InputMaker'
 
 class Skills extends Component{
     constructor(){
@@ -12,11 +13,11 @@ class Skills extends Component{
                 <div className="skills-header">
                 <h1>Skills<img src="../images/add.png" alt="plus sign"/></h1>
                 </div>
-                <form className="skills-form">
+                <div className="skills-form">
                 <ul>
-                    <li><input type='text' placeholder="Add Skill"/><button type='submit'>Add</button></li>
+                    <li><InputMaker type={'text'} placeholder={"Add Skill"}/></li>
                 </ul>
-                </form>
+                </div>
             </div>
         )
     }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './Experience.scss'
+import InputMaker from "./InputMaker";
 
 class Experience extends Component{
     constructor(){
@@ -13,12 +14,12 @@ class Experience extends Component{
                 <div className="experience-header">
                 <h1>Work Experience <img src="../images/add.png" alt="plus sign"/></h1>
                 </div>
-                <form className="experience-form">
-                    <input type='text' placeholder="Company"/>
-                    <input type='text' placeholder="Position"/>
-                    <input type='text' placeholder="Start Date"/>
-                    <input type='text' placeholder="End Date"/>
-                </form>
+                <div className="experience-form">
+                    <InputMaker type={'text'} placeholder={"Company"}/>
+                    <InputMaker type={'text'} placeholder={"Position"}/>
+                    <InputMaker type={'text'} placeholder={"Start Date"}/>
+                    <InputMaker type={'text'} placeholder={"End Date"}/>
+                </div>
             </div>
         )
     }

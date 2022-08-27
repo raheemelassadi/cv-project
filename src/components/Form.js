@@ -6,6 +6,7 @@ import Experience from "./Experience";
 import Education from "./Education";
 import Render from "./Render";
 
+
 class Form extends Component{
     constructor(){
         super()
@@ -13,13 +14,13 @@ class Form extends Component{
 
     render(){
         return(
-            <>
+            <form>
                 <GeneralInfo />
                 <Experience />
                 <Education />
                 <Skills />
                 <Render />
-            </>
+            </form>
         )
     }
 }
