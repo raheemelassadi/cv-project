@@ -9,7 +9,7 @@ class Render extends Component{
     render(){
         return(
             <div className="render-container">
-                <button type="submit" className="render-btn">Render</button>
+                <button className="render-btn">Render</button>
             </div>
         )
     }

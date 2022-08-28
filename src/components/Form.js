@@ -19,7 +19,7 @@ class Form extends Component{
                 <Experience />
                 <Education />
                 <Skills />
-                <Render />
+
             </form>
         )
     }

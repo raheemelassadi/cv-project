@@ -3,9 +3,10 @@ import './Skills.scss'
 import InputMaker from './InputMaker'
 
 class Skills extends Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props);
     }
+
 
     render(){
         return(
