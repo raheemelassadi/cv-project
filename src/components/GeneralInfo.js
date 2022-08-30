@@ -3,8 +3,8 @@ import InputMaker from "./InputMaker";
 import "./GeneralStyles.scss"
 
 class GeneralInfo extends Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
     }
 
     render(){
