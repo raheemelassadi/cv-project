@@ -3,6 +3,8 @@ import Form from "./components/Form";
 import Header from "./components/Header";
 import "./App.scss"
 import ReactToPrint from "react-to-print";
+import Render from "./components/Render";
+
 
 class App extends Component{
   constructor(){
@@ -12,10 +14,16 @@ class App extends Component{
   render(){
     return(
       <>
+      <div>
+        <Header />
+      </div>
+      <div>
+        <Form ref={el => (this.componentRef =  el)}/>
+      </div>
       <ReactToPrint 
         trigger={() => {
 
-          return <button> print me</button>
+          return <div className="render-container"><button className="btn"><Render /></button></div>
         }}
 
         content = {() => this.componentRef} 
@@ -23,14 +31,6 @@ class App extends Component{
         pageStyle= 'print'
 
       /> 
-
-
-      <div>
-        <Header />
-      </div>
-      <div>
-        <Form ref={el => (this.componentRef =  el)} style={{padding: 100}}/>
-      </div>
       </>
     )
   }
