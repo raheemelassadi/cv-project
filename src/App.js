@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import "./App.scss"
 import ReactToPrint from "react-to-print";
 import Render from "./components/Render";
+import PrintableForm from "./PrintableForm"
+
 
 
 class App extends Component{
@@ -18,7 +20,8 @@ class App extends Component{
         <Header />
       </div>
       <div>
-        <Form ref={el => (this.componentRef =  el)}/>
+        <Form />
+        <PrintableForm ref={el => (this.componentRef =  el)}/>
       </div>
       <ReactToPrint 
         trigger={() => {
