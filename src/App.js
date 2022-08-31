@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { useRef } from "react";
 import Form from "./components/Form";
 import Header from "./components/Header";
 import "./App.scss"
@@ -8,12 +9,10 @@ import PrintableForm from "./PrintableForm"
 
 
 
-class App extends Component{
-  constructor(){
-    super()
-  }
+function App (){
 
-  render(){
+    let componentRef = useRef();
+
     return(
       <>
       <div>
@@ -21,22 +20,22 @@ class App extends Component{
       </div>
       <div>
         <Form />
-        <PrintableForm ref={el => (this.componentRef =  el)}/>
+        <div style={{ display: "none" }}>
+          <PrintableForm ref={(el) => (componentRef = el)} />
+        </div>
       </div>
       <ReactToPrint 
         trigger={() => {
-
           return <div className="render-container"><button className="btn"><Render /></button></div>
         }}
 
-        content = {() => this.componentRef} 
-        documentTitle="CV"
+        content = {() => componentRef} 
+        documentTitle="Resume"
         pageStyle= 'print'
 
       /> 
       </>
     )
-  }
 }
 
 export default App;
