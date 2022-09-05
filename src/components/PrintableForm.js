@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 class PrintableForm extends Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
     }
 
 
@@ -10,8 +10,8 @@ class PrintableForm extends Component{
         return(
             <div >
                 <div className="print-header">
-                    <h1>John Damon</h1>
-                    <h3>Software Developer</h3>
+                    <h1>{this.props.name}</h1>
+                    <h3>{this.props.last}</h3>
                 </div>
             </div>
         )

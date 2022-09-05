@@ -1,27 +1,22 @@
-import React, { Component } from "react";
-import InputMaker from "./InputMaker";
+import React from "react";
 import "./GeneralStyles.scss"
 
-class GeneralInfo extends Component{
-    constructor(props){
-        super(props)
-    }
+function GeneralInfo(props) {
 
-    render(){
         return(
             <div className="form-container">
                 <h1>Personal Info</h1>
                     <div>
-                        <InputMaker placeholder={'First Name'}/>
-                        <InputMaker placeholder={'Last Name'}/>
+                        <input placeholder={props.first}/>
+                        <input placeholder={props.last}/>
                         <div className="contact-info">
-                            <InputMaker placeholder={'Email'} type={'email'}/>
-                            <InputMaker placeholder={'Phone Number'} type={'tel'}/>
+                            <input placeholder={props.email} type={props.emailType}/>
+                            <input placeholder={props.phone} type={props.phoneType}/>
                         </div>
                     </div>
             </div>
         )
-    }
+
 }
 
 export default GeneralInfo
