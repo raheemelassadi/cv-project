@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useRef } from "react";
-import Form from "./components/Form";
 import Header from "./components/Header";
 import "./App.scss"
 import ReactToPrint from "react-to-print";
@@ -8,6 +7,7 @@ import Render from "./components/Render";
 import PrintableForm from "./components/PrintableForm";
 import GeneralInfo from "./components/GeneralInfo";
 import Experience from "./components/Experience";
+import Education from "./components/Education"
 
 function App (){
 
@@ -35,6 +35,7 @@ function App (){
     <div>
       <GeneralInfo getInfo={getInfo}/>
       <Experience getExperienceInfo={getExperienceInfo}/>
+      <Education />
       <div style={{display: "none"}}>
       <PrintableForm ref={(el) => (componentRef = el)} userInfo={userInfo} expInfo={expInfo}/>
       </div>
