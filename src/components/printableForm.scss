@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Poppins:wght@500&family=Raleway&display=swap');
+
+.print-header{
+    font-family: 'Raleway', sans-serif;
+}
+
+.general {
+    display: flex;
+    margin: 20px 0 70px 0;
+
+    .name{
+        font-family: 'Ms Madi', cursive;
+        text-transform: capitalize;
+        font-size: 50px;
+    }
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        margin: 40px 0 20px 0;
+    }
+
+    h3 {
+        text-transform: capitalize;
+    }
+}
+
+.sub-general {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    #phone {
+        margin: 0 0 0 87px;
+    }
+}
+
+

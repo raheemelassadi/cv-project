@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "./GeneralStyles.scss"
-import ReactToPrint from "react-to-print";
-import Render from "./Render";
-import { useRef } from "react";
 
-function GeneralInfo({getInfo}) {
+function GeneralInfo({getGeneralInfo}) {
 
         const [general, setGeneral] = useState({
             first: '',
@@ -14,13 +11,11 @@ function GeneralInfo({getInfo}) {
         });
 
         function handleChange(e){
-            console.log(`${e.target.name} ${e.target.value}`)
             setGeneral({...general,[e.target.name]: e.target.value});
         };
 
         const renderUserInfo=()=> {
-            console.log(general)
-           getInfo(general)
+           getGeneralInfo(general)
         }
 
 

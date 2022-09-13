@@ -16,13 +16,13 @@ function App (){
   const [expInfo, setExpInfo]= useState({});
 
 
-  const getInfo=(data)=> {
+  const getGeneralInfo=(data)=> {
     setUserInfo(data)
     setShowInfo(true);
   }
 
   const getExperienceInfo=(data)=> {
-   setExpInfo(data);
+    setExpInfo(data);
   }
 
   let componentRef = useRef();
@@ -33,7 +33,7 @@ function App (){
       <Header />
     </div>
     <div>
-      <GeneralInfo getInfo={getInfo}/>
+      <GeneralInfo getGeneralInfo={getGeneralInfo}/>
       <Experience getExperienceInfo={getExperienceInfo}/>
       <Education />
       <div style={{display: "none"}}>
