@@ -45,6 +45,8 @@ function Experience ({getExperienceInfo}){
                 </div>
 
                 {showExtra && (
+                    <>
+                    <hr />
                     <div className="experience-form">
                     <input type='text' placeholder="Company" value={general.company} name="company"
                             onChange={(e)=> {handleChange(e); renderUserInfo()}}/>
@@ -55,6 +57,7 @@ function Experience ({getExperienceInfo}){
                     <input type='text' placeholder="End Date" value={general.endDate} name="endDate"
                             onChange={(e)=> {handleChange(e); renderUserInfo()}}/>
                 </div>
+                </>
                 )
                 }
 

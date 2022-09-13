@@ -11,9 +11,6 @@ import Experience from "./components/Experience";
 
 function App (){
 
-  // const [thing, setThing] = useState({
-  //   name: ${name}
-  // })
   const [userInfo, setUserInfo]= useState({});
   const [showInfo, setShowInfo]= useState(false);
   const [expInfo, setExpInfo]= useState({});
@@ -28,8 +25,6 @@ function App (){
    setExpInfo(data);
   }
 
-
-
   let componentRef = useRef();
 
   return(
@@ -41,7 +36,7 @@ function App (){
       <GeneralInfo getInfo={getInfo}/>
       <Experience getExperienceInfo={getExperienceInfo}/>
       <div style={{display: "none"}}>
-      <PrintableForm ref={(el) => (componentRef = el)}  userInfo={userInfo} expInfo={expInfo}/>
+      <PrintableForm ref={(el) => (componentRef = el)} userInfo={userInfo} expInfo={expInfo}/>
       </div>
     </div>
 

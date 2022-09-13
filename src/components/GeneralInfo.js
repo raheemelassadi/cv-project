@@ -29,52 +29,34 @@ function GeneralInfo({getInfo}) {
                 <h1>Personal Info</h1>
                     <div>
                         <input 
-                            placeholder={'name'}
+                            placeholder={'First Name'}
                             value={general.first}
                             name='first'
                             onChange={(e)=> { handleChange(e); renderUserInfo()}}
                         />
                         <input 
-                            placeholder={"last"}
+                            placeholder={"Last Name"}
                             value={general.last}
                             name="last"
                             onChange={(e)=> { handleChange(e); renderUserInfo()}}
                         />
                         <div className="contact-info">
                             <input 
-                                placeholder={"email"} 
+                                placeholder={"Email Address"} 
                                 type="email"
                                 value={general.email}
                                 name="email"
                                 onChange={(e)=> { handleChange(e); renderUserInfo()}}
                             />
                             <input 
-                                placeholder={"phone"} 
+                                placeholder={"Phone Number"} 
                                 type="tel"
                                 value={general.phone}
                                 name="phone"
                                 onChange={(e)=> { handleChange(e); renderUserInfo()}}
                             />
                         </div>
-
-            
-                    {/* <button className="render-btn" onClick={renderUserInfo}>Submit</button> */}
-            
-
-
-          {/* <ReactToPrint 
-      trigger={() => {
-        return <div className="render-container"><button className="btn"><Render renderUserInfo={renderUserInfo}/></button></div>
-      }}
-
-      content = {() => componentRef} 
-      documentTitle="Resume"
-      pageStyle= 'print'
-
-    />   */}
-      
                     </div>
-
             </div>
         )
 

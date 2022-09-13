@@ -7,8 +7,10 @@ class PrintableForm extends Component{
         return(
             <div >
                 <div className="print-header">
-                    <h1>{this.props.userInfo.first}</h1>
-                    <h3>{this.props.userInfo.last}</h3>
+                    <div className="general">
+                        <h1>{this.props.userInfo.first} {this.props.userInfo.last}</h1>
+                        <h3>{this.props.userInfo.email}{this.props.userInfo.phone}</h3>
+                    </div>
                     <h3>{this.props.expInfo?.company}</h3>
                     <h3>{this.props.expInfo?.position}</h3>
                 </div>

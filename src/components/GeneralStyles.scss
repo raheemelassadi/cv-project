@@ -7,6 +7,14 @@
     margin-top: 50px;
     flex-direction: column;
 
+    hr {
+        height: 1px;
+        width: 20%;
+        background-color: rgb(182, 182, 182);
+        margin: 40px auto;
+        filter: drop-shadow(0 0 1.75rem rgb(0, 0, 0));
+    }
+
 
     h1 {
         align-self: center;
@@ -29,3 +37,5 @@ div {
     background-color: white;
     margin: 0 auto;
 }
+
+
