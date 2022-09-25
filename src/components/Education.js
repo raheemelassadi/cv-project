@@ -8,7 +8,7 @@ class Education extends Component{
         return(
             <div className="form-container">
                 <div className="experience-header">
-                <h1>Education <img src="../images/add.png" alt="plus sign"/></h1>
+                <h1>Education </h1>
                 </div>
                 <div className="experience-form">
                     <input type='text' placeholder="School"/>

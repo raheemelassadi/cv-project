@@ -23,14 +23,21 @@ function App (){
 
   const getExperienceInfo=(data)=> {
     setExpInfo(data);
+    setShowInfo(true)
   }
 
   let componentRef = useRef();
 
+  const ref = useRef(null);
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+  };
+
   return(
     <>
     <div>
-      <Header />
+      <Header onClick={handleClick}/>
     </div>
     <div>
       <GeneralInfo getGeneralInfo={getGeneralInfo}/>
@@ -43,7 +50,7 @@ function App (){
 
      <ReactToPrint 
       trigger={() => {
-        return <div className="render-container"><button className="btn"><Render/></button></div>
+        return <div className="render-container"><button className="btn"><Render ref={ref}/></button></div>
       }}
 
       content = {() => componentRef} 
