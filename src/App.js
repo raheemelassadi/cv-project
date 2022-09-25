@@ -12,45 +12,43 @@ import Education from "./components/Education"
 function App (){
 
   const [userInfo, setUserInfo]= useState({});
-  const [showInfo, setShowInfo]= useState(false);
   const [expInfo, setExpInfo]= useState({});
+  const [educationInfo, setEducationInfo] = useState({})
 
 
   const getGeneralInfo=(data)=> {
     setUserInfo(data)
-    setShowInfo(true);
   }
 
   const getExperienceInfo=(data)=> {
     setExpInfo(data);
-    setShowInfo(true)
+  }
+
+  const getEducationInfo=(data)=> {
+    setEducationInfo(data);
   }
 
   let componentRef = useRef();
 
-  const ref = useRef(null);
 
-  const handleClick = () => {
-    ref.current?.scrollIntoView({behavior: 'smooth'});
-  };
 
   return(
     <>
     <div>
-      <Header onClick={handleClick}/>
+      <Header />
     </div>
     <div>
       <GeneralInfo getGeneralInfo={getGeneralInfo}/>
       <Experience getExperienceInfo={getExperienceInfo}/>
-      <Education />
+      <Education getEducationInfo={getEducationInfo}/>
       <div style={{display: "none"}}>
-      <PrintableForm ref={(el) => (componentRef = el)} userInfo={userInfo} expInfo={expInfo}/>
+      <PrintableForm ref={(el) => (componentRef = el)} userInfo={userInfo} expInfo={expInfo} educationInfo={educationInfo}/>
       </div>
     </div>
 
      <ReactToPrint 
       trigger={() => {
-        return <div className="render-container"><button className="btn"><Render ref={ref}/></button></div>
+        return <div className="render-container"><button className="btn"><Render /></button></div>
       }}
 
       content = {() => componentRef} 

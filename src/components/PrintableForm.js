@@ -20,7 +20,9 @@ class PrintableForm extends Component{
                     </div>
                     <div className="education">
                         <h1>Education</h1>
-                        <h3></h3>
+                        <h3>Attended {this.props.educationInfo?.school}</h3>
+                        <h3>Degree of {this.props.educationInfo.degree}</h3>
+                        <h3>Start Date {this.props.educationInfo?.startDate} End Date {this.props.educationInfo?.endDate}</h3>
                     </div>
                 </div>
             </div>

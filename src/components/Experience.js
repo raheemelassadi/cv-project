@@ -10,15 +10,11 @@ function Experience ({getExperienceInfo}){
         endDate: ''
     });
 
-    const [showExtra, setShowExtra]= useState(false);
-
     function handleChange(e){
-        console.log(`${e.target.name} ${e.target.value}`)
         setGeneral({...general,[e.target.name]: e.target.value});
     };
 
     const renderUserInfo=()=> {
-        console.log(general)
        getExperienceInfo(general)
     }
 
