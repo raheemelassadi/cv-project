@@ -24,6 +24,12 @@
     }
 }
 
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
 .sub-general {
     display: flex;
     justify-content: flex-end;
@@ -34,4 +40,7 @@
     }
 }
 
+.section {
+    margin: 5em 0;
+}
 
