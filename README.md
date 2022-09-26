@@ -11,6 +11,9 @@ Resume creation app.
     react
         -props
         -state
+        -effect
+
+    use of functional and class components.
 
     file structure
 
@@ -19,4 +22,9 @@ Resume creation app.
 ## Authors
 
 - [@raheemelassadi](https://github.com/raheemelassadi)
+
+
+## Demo
+
+https://raheemelassadi.github.io/cv-project/
 
